@@ -1,0 +1,66 @@
+.bg-cover {
+    background-image: url('https://www.viajenaviagem.com/wp-content/uploads/2021/07/buzios-praias-1920x640-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    -webkit-backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px); 
+}
+
+#travelForm {
+    padding-top: 2%;
+}
+
+.container {
+    position: relative;
+}
+
+.logo {
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.social-icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .bg-cover {
+        height: 20vh;
+    }
+
+    .logo img {
+        width: 70%;
+    }
+
+    .social-icons {
+        position: static;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .bg-cover {
+        height: 15vh;
+    }
+
+    .logo img {
+        width: 80%;
+    }
+
+    .text-6xl {
+        font-size: 3rem;
+    }
+
+    .text-3xl {
+        font-size: 1.5rem;
+    }
+}
