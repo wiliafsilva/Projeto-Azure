@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Viagem</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-sHL4K8FQWx++p4vaHaRHETxd7JwjyjF/d+XOYVjX/SOvqbRrN4y4ER2Ow0Y8Xh5cJhvS57Vz5dfDqkL7Ez6PPQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="icon" type="image/png" sizes="60x60" href="favicon.png">
+
+    <style>
+        .bg-cover {
+            background-image: url('https://www.viajenaviagem.com/wp-content/uploads/2021/07/buzios-praias-1920x640-1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 30vh;
+            width: 100%;
+            position: relative;
+            /* Adicionando suporte para Safari */
+            -webkit-backdrop-filter: blur(10px); /* Blur effect */
+            backdrop-filter: blur(10px); /* Blur effect */
+        }
+
+        #travelForm {
+            padding-top: 2%;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .logo {
+            margin-bottom: 1%;
+            text-align: center;
+        }
+
+        .social-icons {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        /* Adições para responsividade */
+        @media (max-width: 768px) {
+            .bg-cover {
+                height: 20vh;
+            }
+
+            .logo img {
+                width: 70%;
+            }
+
+            .social-icons {
+                position: static;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .bg-cover {
+                height: 15vh;
+            }
+
+            .logo img {
+                width: 80%;
+            }
+
+            .text-6xl {
+                font-size: 3rem;
+            }
+
+            .text-3xl {
+                font-size: 1.5rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4 relative">
+        <div class="logo">
+            <img src="logo2.png" alt="Logo" width="400">
+            <div class="social-icons">
+                <button id="instagram" class="min-w-wull h-12 w-12 transform rounded-full border-2 border-pink-500 bg-white bg-gradient-to-b text-2xl text-pink-600 duration-500 hover:-translate-y-3 hover:border-0 hover:from-indigo-600 hover:via-pink-600 hover:to-yellow-500 hover:text-white">
+                    <i class="fab fa-instagram"></i>
+                </button>
+                <button id="facebook" class="h-12 w-12 transform rounded-full border-2 border-blue-600 bg-white text-2xl text-blue-600 duration-500 hover:-translate-y-3 hover:bg-blue-600 hover:text-white">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                <button id="twitter" class="h-12 w-12 transform rounded-full border-2 border-blue-400 bg-white text-2xl text-blue-400 duration-500 hover:-translate-y-3 hover:bg-blue-400 hover:text-white">
+                    <i class="fab fa-twitter"></i>
+                </button>
+                <button id="whatsapp" class="h-12 w-12 transform rounded-full border-2 border-green-600 bg-white text-2xl text-green-500 duration-500 hover:-translate-y-3 hover:bg-green-600 hover:text-white">
+                    <i class="fab fa-whatsapp"></i>
+                </button>
+                <button id="youtube" class="h-12 w-12 transform rounded-full border-2 border-red-500 bg-white text-2xl text-red-500 duration-500 hover:-translate-y-3 hover:bg-red-500 hover:text-white">
+                    <i class="fab fa-youtube"></i>
+                </button>
+            </div>
+        </div>
+        <div class="bg-cover relative">
+            <h1 class="text-4xl font-bold text-white text-center pt-8 sm:pt-20">Momentos Inesquecíveis</h1>
+        </div>
+        <h2 class="text-3xl font-bold text-gray-800 mt-8 mb-4 mx-auto max-w-lg text-center">Preencha o formulário
+            abaixo para registrar sua viagem:</h2>
+
+        <form id="travelForm" class="max-w-lg mx-auto relative z-10">
+            <div class="bg-white bg-opacity-90 p-4 rounded-md shadow-md relative z-10">
+                <div class="mb-4">
+                    <label for="destination" class="block text-sm font-medium text-gray-700">Destino:</label>
+                    <input type="text" id="destination" name="destination" required
+                        class="w-full sm:w-96 border border-gray-300 rounded-md px-4 py-2">
+                </div>
+
+                <div class="mb-4">
+                    <label for="date" class="block text-sm font-medium text-gray-700">Data:</label>
+                    <input type="date" id="date" name="date" required
+                        class="w-full sm:w-96 border border-gray-300 rounded-md px-4 py-2">
+                </div>
+
+                <div class="mb-4">
+                    <label for="notes" class="block text-sm font-medium text-gray-700">Notas:</label>
+                    <textarea id="notes" name="notes" rows="4"
+                        class="w-full border border-gray-300 rounded-md px-4 py-2"></textarea>
+                </div>
+
+                <div class="mb-4">
+                    <label for="image" class="block text-sm font-medium text-gray-700">Imagem:</label>
+                    <input type="file" id="image" name="image" class="mb-4">
+                </div>
+
+                <button type="submit"
+                    class="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Registrar
+                    Viagem</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

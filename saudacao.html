@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmação de Registro</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .slide-in {
+      animation: slideInAnimation ease 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes slideInAnimation {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+
+<div class="container text-center p-8 slide-in">
+  <h1 class="text-3xl font-semibold text-green-500 mb-4">Obrigado por registrar sua viagem!</h1>
+  <p class="text-lg text-gray-700 mb-2">Em breve quero ver você por aqui,</p>
+  <p class="text-lg text-gray-700 mb-8">Será um prazer registrar suas memórias</p>
+  <button onclick="window.location.href='index.html'" class="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-md transition-colors duration-300">Registre sua próxima viagem.</button>
+</div>
+
+</body>
+</html>
