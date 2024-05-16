@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "Projeto-Azure"
+    "url": "'https://agendaviagem.azurewebsites.net'"
   },
   "keywords": [
     "99260536"
   ],
-  "author": "wilia",
-  "license": "ISC"
+  "author": "wiliafsilva@hotmail.com",
+  "license": "CLI"
 }
