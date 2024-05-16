@@ -1,0 +1,19 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "package",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Projeto-Azure"
+  },
+  "keywords": [
+    "99260536"
+  ],
+  "author": "wilia",
+  "license": "ISC"
+}
