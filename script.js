@@ -12,7 +12,7 @@ document.getElementById("travelForm").addEventListener("submit", function(event)
     formData.append("notes", notes);
     formData.append("image", image);
    
-    fetch('URL_DA_SUA_FUNCAO_DO_AZURE', {
+    fetch('https://agendaviagem.azurewebsites.net', {
         method: 'POST',
         body: formData
     })
