@@ -1,0 +1,25 @@
+{
+  "name": "projeto-aruze",
+  "version": "1.0.0",
+  "description": "deploy no azure",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiliafsilva/Projeto-Azure.git"
+  },
+  "keywords": [
+    "diario",
+    "de",
+    "viagem"
+  ],
+  "author": "wilia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wiliafsilva/Projeto-Azure/issues"
+  },
+  "homepage": "https://github.com/wiliafsilva/Projeto-Azure#readme"
+}
